@@ -37,7 +37,7 @@ app.post('/send-email', function(req, res) {
 
 
     };
-    cron.schedule('* * * * *', () => {
+    cron.schedule('* * *', () => {
       
        transporter.sendMail(mailOptions,function(error, info) {
 
